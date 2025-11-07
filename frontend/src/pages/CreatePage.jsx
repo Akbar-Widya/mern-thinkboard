@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router";
 import { ArrowLeftIcon, Skull } from "lucide-react";
 import { useState } from "react";
-import api from "../lib/axios"
+import api from "../lib/axios";
 import toast from "react-hot-toast";
 
 const CreatePage = () => {
@@ -75,10 +75,9 @@ const CreatePage = () => {
                            <label className="label">
                               <span className="label-text">Content</span>
                            </label>
-                           <input
-                              type="text"
+                           <textarea
                               placeholder="Write your note here..."
-                              className="input input-bordered"
+                              className="textarea textarea-bordered h-32"
                               value={content}
                               onChange={(e) => setContent(e.target.value)}
                            />
